@@ -22,7 +22,7 @@ describe('populate', () => {
   test('Find input planets year length in days', () => {
     let ageCalculator = populate();
     const uranus = ageCalculator.planets[6]
-    expect(uranus.yearLengthInDays).toEqual(30686);
+    expect(uranus.yearLengthInDays).toEqual(30687);
   });
 
 
