@@ -40,8 +40,7 @@ describe('populate', () => {
 
   test('calculate difference between average age & input age.', () => {
     let ageCalculator = populate();
-    const uranusLifespan = ageCalculator.planets[6].averageLifespan
-    const lifespanDifference = ageCalculator.calcTimeFromLifespan()
+    ageCalculator.calcTimeFromLifespan()
     const earthDifference = ageCalculator.planets[2].timeFromLifespan;
     expect(lifespanDifference).toEqual(53);
   });
