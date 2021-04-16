@@ -35,9 +35,8 @@ describe('populate', () => {
   test('calculate average lifespan on each planet', () => {
     let ageCalculator = populate();
     const planetLifespans = ageCalculator.calcPlanetLifespan(ageCalculator, ageCalculator.averageEarthLifespan);
-    console.log(planetLifespans);
     const uranusLifespan = ageCalculator.planets[6].averageLifespan
-    expect(uranusLifespan).toEqual("0.38");
+    expect(uranusLifespan).toEqual("1.01");
 
   });
 
