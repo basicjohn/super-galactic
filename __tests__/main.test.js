@@ -5,7 +5,7 @@ describe('populate', () => {
   test('Create the planet object using the Planet constructor & store in ageCalculator', () => {
     const ageCalculator = populate();
     expect(ageCalculator.planets[0].name).toMatch("Mercury");
-    expect(ageCalculator.planets[7].name).toMatch("Pluto");
+    expect(ageCalculator.planets[8].name).toMatch("Pluto");
 
   });
 
