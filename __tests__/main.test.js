@@ -25,7 +25,6 @@ describe('populate', () => {
     expect(uranus.yearLengthInDays).toEqual(30687);
   });
 
-
   test('calculate users age on planet', () => {
     let ageCalculator = populate();
     const uranus = ageCalculator.planets[6]
@@ -33,5 +32,13 @@ describe('populate', () => {
     expect(ageOnUranus).toEqual("0.38");
   });
 
+  test('calculate average lifespan on each planet', () => {
+    let ageCalculator = populate();
+    const planetLifespans = ageCalculator.calcPlanetLifespan(ageCalculator, ageCalculator.averageEarthLifespan);
+    console.log(planetLifespans);
+    const uranusLifespan = ageCalculator.planets[6].averageLifespan
+    expect(uranusLifespan).toEqual("0.38");
+
+  });
 
 });

@@ -1,7 +1,7 @@
 export default class AgeCalculator {
   constructor(){
     this.earthAge = 0;
-    this.averageEarthAgeYears = 85;
+    this.averageEarthLifespan = 85;
     this.yearLengthInDays = 365;
     this.planets = [];
   }
@@ -15,5 +15,14 @@ export default class AgeCalculator {
     const planetYearInDays = planet.yearLengthInDays;
     let ageOnPlanet = (daysOnEarth / planetYearInDays).toFixed(2);
     return ageOnPlanet;
+
   }
+
+  calcPlanetLifespan(ageCalculator) {
+    ageCalculator.planets.forEach( function (planet) {
+      const planetLifespan = ageCalculator.calcAge(planet, ageCalculator.averageEarthLifespan);
+      planet.averageLifespan = planetLifespan;
+    });
+  }
+
 }

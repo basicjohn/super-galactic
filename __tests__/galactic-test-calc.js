@@ -8,9 +8,9 @@ describe('AgeCalculator', () => {
     expect(ageCalculator);
   });
 
-  test('Check averageEarthAge to make sure object is created', () => {
+  test('Check averageEarthLifespan to make sure object is created', () => {
     const ageCalculator = new AgeCalculator;
-    expect(ageCalculator.averageEarthAgeYears).toEqual(85);
+    expect(ageCalculator.averageEarthLifespan).toEqual(85);
   });
 
 
