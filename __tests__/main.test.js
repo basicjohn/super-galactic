@@ -19,11 +19,23 @@ describe('populate', () => {
     expect(ageCalculator.age).toEqual(32);
   });
 
-  test('calculate users age on planet', () => {
-    const ageCalculator = populate();
-    const uranusDays = ageCalculator.planets[6].yearLengthInDays;
-    const ageOnUranus = ageCalculator.calcAge(uranusDays)
-    expect(ageOnUranus).toEqual(30688);
+  test('Find input planets year length in days', () => {
+    let ageCalculator = populate();
+    const uranus = ageCalculator.planets[6]
+    expect(uranus.yearLengthInDays).toEqual(30686);
   });
+
+
+  // test('calculate users age on planet', () => {
+  //   let ageCalculator = populate();
+  //   const uranus = ageCalculator.planets[6]
+  //   console.log(uranus);
+  //   const uranusDays = uranus.yearLengthInDays;
+  //   console.log(uranusDays);
+  //   const ageOnUranus = ageCalculator.calcAge(ageCalculator.planets[6]);
+  //   console.log(ageOnUranus);
+  //   expect(ageOnUranus).toEqual(30688);
+  // });
+
 
 });
