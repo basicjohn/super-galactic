@@ -4,4 +4,9 @@ export default class AgeCalculator {
     this.averageEarthAge = 85;
     this.planets = [];
   }
+
+  // addPlanet(name, year) {
+
+  //   this.planets.push(planet)
+  // }
 }
