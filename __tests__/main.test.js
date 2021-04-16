@@ -30,7 +30,7 @@ describe('populate', () => {
     let ageCalculator = populate();
     const uranus = ageCalculator.planets[6]
     const ageOnUranus = ageCalculator.calcAge(uranus, 32);
-    expect(ageOnUranus).toEqual(30688);
+    expect(ageOnUranus).toEqual("0.38");
   });
 
 
