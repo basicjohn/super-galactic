@@ -1,8 +1,10 @@
-import $ from 'jquery';
-import 'bootstrap';
-import './css/styles.css';
+import $ from 'jquery'
+import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './css/styles.css'
 import Planet from './js/planet.js';
 import AgeCalculator from './js/galactic-calc.js';
+
 
 export function populate() {
 const age = 32;
@@ -32,3 +34,11 @@ return ageCalculator;
 }
 
 
+$(document).ready(function () {
+  populate();
+  $('form').submit(function (event) {
+    event.preventDefault();
+    const ageInput = $('input.ageInput').val();
+
+  });
+});
