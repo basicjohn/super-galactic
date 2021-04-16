@@ -25,7 +25,7 @@ export default class AgeCalculator {
     });
   }
 
-  calcTimeFromLifespan(ageCalculator){
+  calcYearsFromLifespan(ageCalculator){
     ageCalculator.planets.forEach( function (planet) {
       const lifespanDifference = ageCalculator.age - ageCalculator.averageEarthLifespan
       const yearsFromLifespan = ageCalculator.calcAge(planet, lifespanDifference);
