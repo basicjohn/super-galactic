@@ -34,14 +34,13 @@ describe('populate', () => {
 
   test('calculate average lifespan on each planet', () => {
     let ageCalculator = populate();
-    const planetLifespans = ageCalculator.calcPlanetLifespan(ageCalculator, ageCalculator.averageEarthLifespan);
     const uranusLifespan = ageCalculator.planets[6].averageLifespan
     expect(uranusLifespan).toEqual("1.01");
   });
 
-  test('calculate difference between average age and input age.'), () => {
-  
-  
+  test('calculate difference between average age & input age.', () => {
+    let ageCalculator = populate();
+
   });
 });
 

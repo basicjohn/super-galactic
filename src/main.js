@@ -27,7 +27,7 @@ ageCalculator.addPlanet(saturn);
 ageCalculator.addPlanet(uranus);
 ageCalculator.addPlanet(neptune);
 ageCalculator.addPlanet(pluto);
-
+ageCalculator.calcPlanetLifespan(ageCalculator, ageCalculator.averageEarthLifespan);
 return ageCalculator;
 }
 
