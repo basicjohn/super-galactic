@@ -3,11 +3,7 @@ export default class Planet {
     this.name = name;
     this.yearLengthInDays = yearLength;
     this.averageLifespan = 0;
-    this.timeFromLifespan = 0; 
+    this.yearsFromLifespan = 0; 
   }
 
-  // addPlanet(name, year) {
-
-  //   this.planets.push(planet)
-  // }
 }
