@@ -9,6 +9,9 @@ describe('populate', () => {
 
   });
 
-
+  test('Store users age in ageCalculator.age', () => {
+    const ageCalculator = populate();
+    expect(ageCalculator.age).toEqual(33);
+  });
 
 });

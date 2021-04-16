@@ -1,7 +1,7 @@
 export default class Planet {
   constructor(name, yearLength){
     this.name = name;
-    this.yearLength = yearLength;
+    this.yearLengthInDays = yearLength;
   }
 
   // addPlanet(name, year) {
