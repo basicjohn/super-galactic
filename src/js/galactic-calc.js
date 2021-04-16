@@ -1,3 +1,5 @@
+
+
 export default class AgeCalculator {
   constructor(){
     this.earthAge = 0;
@@ -5,8 +7,7 @@ export default class AgeCalculator {
     this.planets = [];
   }
 
-  // addPlanet(name, year) {
-
-  //   this.planets.push(planet)
-  // }
+  addPlanet(planet) {
+    this.planets.push(planet)
+  }
 }

@@ -15,11 +15,11 @@ describe('AgeCalculator', () => {
 
   // test('create planet and add it to AgeCalculator.planets', () => {
   //   const ageCalculator = new AgeCalculator;
-  //   const planetName = "Mars";
-  //   const planetYear =  1.88;
-  //   AgeCalculator.newPlanet("Mars", 1.88);
-  //   expect(AgeCalculator.planets[0].name).toEqual(planetName);
-  //   expect(AgeCalculator.planets[0].yearLength).toEqual(planetYear);
+  //   const planetName = "Europa";
+  //   const planetYear =  1.89;
+  //   ageCalculator.addPlanet("Mars", 1.88);
+  //   expect(ageCalculator.planets[0].name).toEqual(planetName);
+  //   expect(ageCalculator.planets[0].yearLength).toEqual(planetYear);
 
   // });
 });
