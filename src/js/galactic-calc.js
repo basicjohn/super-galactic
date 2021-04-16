@@ -25,4 +25,7 @@ export default class AgeCalculator {
     });
   }
 
+  calcTimeFromLifespan(ageCalculator){
+    
+  }
 }
