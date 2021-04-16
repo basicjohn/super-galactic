@@ -5,4 +5,8 @@ describe('Planet', () => {
     const planet = new Planet("Mars", 1.88);
     expect(planet);
   });
+  test('Create the planet object using the Planet constructor', () => {
+    const planet = new Planet("Mars", 1.88);
+    expect(planet.name).toMatch("Europa");
+  });
 });
