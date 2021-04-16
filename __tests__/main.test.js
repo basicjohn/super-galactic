@@ -14,4 +14,16 @@ describe('populate', () => {
     expect(ageCalculator.age).toEqual(32);
   });
 
+  test('Store users age in ageCalculator.age', () => {
+    const ageCalculator = populate();
+    expect(ageCalculator.age).toEqual(32);
+  });
+
+  test('calculate users age on planet', () => {
+    const ageCalculator = populate();
+    const uranusDays = ageCalculator.planets[6].yearLengthInDays;
+    const ageOnUranus = ageCalculator.calcAge(uranusDays)
+    expect(ageOnUranus).toEqual(30688);
+  });
+
 });

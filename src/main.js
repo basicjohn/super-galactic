@@ -32,7 +32,3 @@ return ageCalculator;
 }
 
 
-$(document).ready(function() {
-
-
-});

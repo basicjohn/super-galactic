@@ -1,5 +1,3 @@
-
-
 export default class AgeCalculator {
   constructor(){
     this.earthAge = 0;
@@ -9,12 +7,13 @@ export default class AgeCalculator {
   }
 
   addPlanet(planet) {
-    this.planets.push(planet)
+    this.planets.push(planet);
   }
 
   calcAge(planet) {
     const daysOnEarth =  this.yearLengthInDays * this.earthAge;
-    const ageOnPlanet = daysOnEarth / planet.yearLengthInDays;
+    const planetYearInDays = planet.yearLengthInDays
+    const ageOnPlanet = daysOnEarth / planetYearInDays;
     return ageOnPlanet;
   }
 }
