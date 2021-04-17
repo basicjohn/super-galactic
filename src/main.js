@@ -1,7 +1,7 @@
-import $ from 'jquery'
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import './css/styles.css'
+import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/styles.css';
 import Planet from './js/planet.js';
 import AgeCalculator from './js/galactic-calc.js';
 
@@ -32,13 +32,14 @@ ageCalculator.addPlanet(pluto);
 ageCalculator.calcPlanetLifespan(ageCalculator);
 return ageCalculator;
 }
+$("button").click(function(event) {
+  event.preventDefault();
+  // const ageInput = $("input.ageInput").val();
 
+});
 
-$(document).ready(function () {
+document.ready(function(){
+
   populate();
-  $('form').submit(function (event) {
-    event.preventDefault();
-    const ageInput = $('input.ageInput').val();
 
-  });
 });
