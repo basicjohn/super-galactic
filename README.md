@@ -1,4 +1,4 @@
-# Pomodoro 314
+# Super Galactic Age Calculator
 
 #### _This is the Super Galactic Age Calculator Project created by John Edmondson_
 
