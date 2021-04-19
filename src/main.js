@@ -1,10 +1,8 @@
 import $ from 'jquery';
 import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Planet from './js/planet.js';
 import AgeCalculator from './js/galactic-calc.js';
-
 
 export function populate() {
 const age = 32;
@@ -17,7 +15,6 @@ let saturn = new Planet("Saturn", 10759);
 let uranus = new Planet("Uranus", 30687);
 let neptune = new Planet("Neptune", 60190);
 let pluto = new Planet("Pluto", 90520);
-
 let ageCalculator = new AgeCalculator;
 ageCalculator.age = age;
 ageCalculator.addPlanet(mercury);
@@ -32,14 +29,12 @@ ageCalculator.addPlanet(pluto);
 ageCalculator.calcPlanetLifespan(ageCalculator);
 return ageCalculator;
 }
-$("button").click(function(event) {
-  event.preventDefault();
-  // const ageInput = $("input.ageInput").val();
 
-});
+// populate();
+// $("button").click(function(event) {
+//   event.preventDefault();
+//   const ageInput = $("input#ageInput").val();
+// });
 
-document.ready(function(){
-
-  populate();
-
-});
+// document.ready(function(){
+// });

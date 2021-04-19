@@ -5,5 +5,4 @@ export default class Planet {
     this.averageLifespan = 0;
     this.yearsFromLifespan = 0; 
   }
-
 }

@@ -1,14 +1,10 @@
 # Pomodoro 314
 
-#### _This is the Epicodus Pizza Parlor Project created by John Edmondson_
+#### _This is the Super Galactic Age Calculator Project created by John Edmondson_
 
-### Week 4 Project for the March 2021 Co-hort session: Arrays and Looping Independent Project
+### Week 5 Project for the March 2021 Co-hort session: Test Driven Development and Environments with JavaScript
 
 #### By _**John Edmondson**_
-
-### Git Pages Link
-
-[Pomodoro 314 (GitHub Pages)](http://basicjohn.github.io/pizza-parlor)
 
 ## Technologies Used
 
@@ -20,137 +16,39 @@
 - VS Code
 - Javascript
 - Jquery
+- Webpack
+- Babel
+- ESlint
+- Jest
 
 ## Description
 
-\_ This web page is meant to take an input by the user and then output the selected pizza information to make the desired pizza. \_
+\_ This project is meant to work through the TDD process by creating classes and functions to calculate your age on other planets. \_
 
-## Setup/Installation Requirements
+## Setup and Use
 
-- Clone the repository to your desktop.
-- Navigate to the top level of the directory.
-- Open index.html in you web browser.
+### Prerequisites
 
-## Specifications
+- [Node](https://nodejs.org/en/)
+- A text editor like [VS Code](https://code.visualstudio.com/) or [Sublime Text](https://www.sublimetext.com/)
 
-Describe: Pizza()
-Test: create a pizza with empty keys and a key with the base price
-Code:
-const pizza1 = new Pizza();
-pizza1
-Expected Output:
-Pizza {
-size: "" ,
-cheeses: [],
-veggies: [],
-meats: [],
-price: 12
-}
+### Installation
 
-Describe: pizza.prototype.addSize()
-Test:
-Code: Pizza.addSize("Large");
-Expected Output:
-Pizza {
-size: "Large",
-cheeses: [],
-veggies: [],
-meats: []
-price: 12
-}
-
-Describe: pizza.prototype.addCheese()
-Test:
-Code: Pizza.addCheese("Mozzarella");
-Expected Output: Pizza {
-size: "Large",
-cheeses: ["Mozzarella"],
-veggies: [],
-meats: []
-price: 12
-}
-
-Describe: pizza.prototype.addVeggies()
-Test:
-Code: Pizza.addVeggies("Bell Peppers");
-Expected Output: Pizza {
-size: "Large",
-cheeses: ["Mozzarella"],
-veggies: ["Bell Peppers"],
-meats: []
-}
-
-Describe: pizza.prototype.addMeats()
-Test:
-Code: Pizza.addCheese("Sausage");
-Expected Output:
-Pizza {
-size: "Large",
-cheeses: ["Mozzarella"],
-veggies: ["Bell Peppers"],
-meats: ["Sausage"]
-}
-
-Describe: Order()
-Test: Create an order object to house pizzas, subtotal, tax, and total
-Code:
-const order = new Order();
-Expected Output:
-order {
-pizzas: []
-this.subTotal = 0;
-this.taxes = 0;
-this.total = 0;
-}
-
-Describe: order.prototype.addPizza()
-Test: add the created pizza to the order object
-Code:
-order.addPizza();
-Expected Output:
-order {
-pizzas: [
-Pizza {
-size: "Large",
-cheeses: ["Mozzarella"],
-veggies: ["Bell Peppers"],
-meats: ["Sausage"]
-price: 12
-}]
-this.subTotal = 0;
-this.taxes = 0;
-this.total = 0;
-}
-
-Describe: Order.prototype.calcSubtotal()
-Test: add the price of each pizza together to get the subtotal
-Code:
-const pizza1 = 14
-const pizza2 = 16
-order.calcSubtotal()
-Expected Output:
-order.subtotal = 30
-
-Describe: Order.prototype.calcTax()
-Test: multiply subtotal by tax and return total tax
-Code:
-const subtotal = 10
-order.calcTax()
-Expected Output:
-order.tax = 1
-
-Describe: Order.prototype.calcTotal()
-Test: add subtotal and taxes together to get the
-Code:
-const subtotal = 10
-const tax = 1
-order.calcTotal()
-Expected Output:
-order.total = 11
+1. Clone the repository: `$ git clone https://github.com/basicjohn/super-galactic.git`
+2. Navigate to the `super-galactic/` directory on your computer
+3. Open with your preferred text editor to view the code base
+4. To start a development server and view the project in the browser:
+   - Navigate to `super-galactic/` in your command line
+   - Run the command `npm install` to install dependencies
+   - Optionally, run the commmand `npm run build` to make a bundle of the files
+   - Finally, run the command `npm run start` to start a development server
+5. To run tests, navigate to `super-galactic/` in your terminal and run the command `npm run test`
 
 ## Known Bugs
 
-- \_Mobile Styles haven't been created\_
+- \_Issues with the compiled code displaying in the browser\_
+- \_Not able to connect jquery to the compile list\_
+- \_Not able to connect bootstrap to the compile list\_
 
 ## License
 
