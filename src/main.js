@@ -1,17 +1,19 @@
 import $ from 'jquery';
 import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Planet from './js/planet.js';
-import AgeCalculator from './js/galactic-calc.js';
+import {populate} from './js/galactic-calc.js';
 
 
 
 
-document.ready(function(){
-
-  populate();
-  $("button").click(function(event) {
+$(document).ready(function(){
+  $("button.btn").click(function(event) {
     event.preventDefault();
+    let ageCalculator = populate();
     const ageInput = $("input#ageInput").val();
+    ageCalculator.earthAge = parseInt(ageInput);
+
+
   });
 });

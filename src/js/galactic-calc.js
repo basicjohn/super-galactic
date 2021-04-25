@@ -45,7 +45,7 @@ export function populate() {
   let neptune = new Planet("Neptune", 60190);
   let pluto = new Planet("Pluto", 90520);
   let ageCalculator = new AgeCalculator;
-  ageCalculator.age = age;
+  ageCalculator.earthAge = age;
   ageCalculator.addPlanet(mercury);
   ageCalculator.addPlanet(venus);
   ageCalculator.addPlanet(earth);
