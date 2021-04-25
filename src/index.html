@@ -5,10 +5,29 @@
   </head>
   <body class="main">
     <main class="container">
-      <form>
-        <input type="text" id="ageInput" placeholder="Input Earth Age" />
-        <button class="btn btn-dark" type="submit">Submit</button>
-      </form>
+
+          <h1>Super Galactic Age Calculator</h1>
+          <h2>Find out your age on each of the planets in the solar system</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4" id="planetary-age-tool">
+            <p>Find out your age on each of the planets in the solar system</p>
+            <form>
+              <input
+                type="text"
+                class="form-control"
+                id="ageInput"
+                placeholder="Input Earth Age"
+              />
+              <button class="btn btn-dark" type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-8">
+            <ul>
+              <li>On <span class="planet-output">Earth</span> you are <span class="age-output">32</span> <span class="planet-output">Earth</span> years old.</li>
+            </ul>
+          </div>
+
     </main>
   </body>
 </html>
