@@ -17,10 +17,7 @@ describe('AgeCalculator', () => {
     expect(ageCalculator.planets[8].name).toMatch("Pluto");
   });
   test('Store users age in ageCalculator.age', () => {
-    expect(ageCalculator.age).toEqual(32);
-  });
-  test('Store users age in ageCalculator.age', () => {
-    expect(ageCalculator.age).toEqual(32);
+    expect(ageCalculator.earthAge).toEqual(32);
   });
   test('Find input planets year length in days', () => {
     const uranus = ageCalculator.planets[6]
@@ -38,6 +35,6 @@ describe('AgeCalculator', () => {
   test('calculate difference between average age & input age.', () => {
     ageCalculator.calcYearsFromLifespan(ageCalculator)
     const earthDifference = ageCalculator.planets[2].yearsFromLifespan;
-    expect(earthDifference).toEqual("-53.00");
+    expect(earthDifference).toEqual(53);
   });
 });

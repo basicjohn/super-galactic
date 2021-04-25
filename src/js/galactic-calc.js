@@ -23,10 +23,11 @@ export default class AgeCalculator {
       planet.averageLifespan = planetLifespan;
     });
   }
-  calcYearsFromLifespan(ageCalculator){
+  calcYearsFromLifespan(ageCalculator) {
     ageCalculator.planets.forEach( function (planet) {
-      const lifespanDifference = ageCalculator.age - ageCalculator.averageEarthLifespan;
-      const yearsFromLifespan = ageCalculator.calcAge(planet, lifespanDifference);
+      let lifespanDifference = ageCalculator.earthAge - ageCalculator.averageEarthLifespan;
+      let yearsFromLifespan = ageCalculator.calcAge(planet, lifespanDifference);
+      yearsFromLifespan = Math.abs(yearsFromLifespan);
       planet.yearsFromLifespan = yearsFromLifespan;
     });
   }
@@ -56,5 +57,6 @@ export function populate() {
   ageCalculator.addPlanet(neptune);
   ageCalculator.addPlanet(pluto);
   ageCalculator.calcPlanetLifespan(ageCalculator);
+  ageCalculator.calcYearsFromLifespan(ageCalculator);
   return ageCalculator;
   }

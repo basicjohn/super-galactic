@@ -46,9 +46,7 @@
 
 ## Known Bugs
 
-- \_Issues with the compiled code displaying in the browser\_
-- \_Not able to connect jquery to the compile list\_
-- \_Not able to connect bootstrap to the compile list\_
+- \_None\_
 
 ## License
 
