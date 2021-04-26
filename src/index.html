@@ -3,31 +3,29 @@
   <head>
     <title>Super Galactic Age Calculator</title>
   </head>
-  <body class="main">
+  <body>
     <main class="container">
-
-          <h1>Super Galactic Age Calculator</h1>
-          <h2>Find out your age on each of the planets in the solar system</h2>
+      <h1>Super Galactic Age Calculator</h1>
+      <h2>Find out your age on each of the planets in the solar system</h2>
+      <!-- Form to input age -->
+      <div class="row">
+        <div class="col-md-4" id="planetary-age-tool">
+          <p>Input your age in Earth years:</p>
+          <form>
+            <input
+              type="text"
+              class="form-control"
+              id="ageInput"
+              placeholder="Input Earth Age"
+            />
+            <button class="btn btn-dark" type="submit">Submit</button>
+          </form>
         </div>
-        <div class="row">
-          <div class="col-md-4" id="planetary-age-tool">
-            <p>Input your age in Earth years</p>
-            <form>
-              <input
-                type="text"
-                class="form-control"
-                id="ageInput"
-                placeholder="Input Earth Age"
-              />
-              <button class="btn btn-dark" type="submit">Submit</button>
-            </form>
-          </div>
-          <div class="col-md-8" id="output">
-            <ul>
-              <li>On <span class="planet-output">Earth</span> you are <span class="age-output">32</span> <span class="planet-output">Earth</span> years old. Based off the average human life expectancy you have aprox. <span class="expectancy-output"></span> years left to live on <span class="planet-output">Earth</span>.</li>
-            </ul>
-          </div>
-
+        <!-- Output section for displaying age on each planet -->
+        <div class="col-md-8" id="output">
+          <ul></ul>
+        </div>
+      </div>
     </main>
   </body>
 </html>

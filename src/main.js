@@ -4,9 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import {populate} from './js/galactic-calc.js';
 
-
-
-
 $(document).ready(function(){
   $("button.btn").click(function(event) {
     event.preventDefault();
@@ -22,6 +19,5 @@ $(document).ready(function(){
       let planetAge = ageCalculator.calcAge(planet, ageInput);
       $("#output ul").append(`<li>On <span class="planet-output">${planetName}</span> you are <span class="age-output">${planetAge}</span> <span class="planet-output">${planetName}</span> years old. Based off the average human life expectancy you have aprox. <span class="expectancy-output">${planetLifespanDifference}</span> years left to live on <span class="planet-output">${planetName}</span>.</li>`);
     });
-
   });
 });
